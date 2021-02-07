@@ -1,0 +1,6 @@
+version: "3.7"
+services:
+  dynamodb:
+    image: kraynezero/aws-dynamodb-local
+    container_name: "golden-shoe-db"
+    ports: ["8000:8000"]

@@ -1,0 +1,30 @@
+{
+  "name": "golden-shoe-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Eugene Lee",
+  "scripts": {
+    "dev": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start": "NODE_ENV=production node build/server.js",
+    "init": "npm run init:clean && npm run init:create && npm run init:load",
+    "init:clean": "node ./scripts/deleteDB.js",
+    "init:create": "node ./scripts/createDB.js",
+    "init:load": "node ./scripts/loadData.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "aws-sdk": "^2.836.0",
+    "express": "4.17.1",
+    "razzle-heroku": "^3.0.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "razzle": "3.3.11"
+  }
+}

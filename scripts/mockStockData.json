@@ -1,0 +1,213 @@
+[
+  {
+    "shoeId": "1",
+    "size": "6",
+    "stock": 6
+  },
+  {
+    "shoeId": "1",
+    "size": "5",
+    "stock": 3
+  },
+  {
+    "shoeId": "1",
+    "size": "6.5",
+    "stock": 4
+  },
+  {
+    "shoeId": "1",
+    "size": "7",
+    "stock": 6
+  },
+  {
+    "shoeId": "2",
+    "size": "6",
+    "stock": 2
+  },
+  {
+    "shoeId": "2",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "2",
+    "size": "5.5",
+    "stock": 3
+  },
+  {
+    "shoeId": "2",
+    "size": "7",
+    "stock": 6
+  },
+  {
+    "shoeId": "2",
+    "size": "8",
+    "stock": 2
+  },
+  {
+    "shoeId": "2",
+    "size": "9",
+    "stock": 6
+  },
+  {
+    "shoeId": "3",
+    "size": "6",
+    "stock": 3
+  },
+  {
+    "shoeId": "3",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "3",
+    "size": "7",
+    "stock": 4
+  },
+  {
+    "shoeId": "3",
+    "size": "8",
+    "stock": 6
+  },
+  {
+    "shoeId": "4",
+    "size": "6",
+    "stock": 4
+  },
+  {
+    "shoeId": "4",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "4",
+    "size": "4.5",
+    "stock": 4
+  },
+  {
+    "shoeId": "4",
+    "size": "5.5",
+    "stock": 6
+  },
+  {
+    "shoeId": "5",
+    "size": "6",
+    "stock": 2
+  },
+  {
+    "shoeId": "5",
+    "size": "6",
+    "stock": 6
+  },
+  {
+    "shoeId": "5",
+    "size": "7.5",
+    "stock": 5
+  },
+  {
+    "shoeId": "5",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "6",
+    "size": "6",
+    "stock": 2
+  },
+  {
+    "shoeId": "6",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "6",
+    "size": "8",
+    "stock": 5
+  },
+  {
+    "shoeId": "6",
+    "size": "9",
+    "stock": 6
+  },
+  {
+    "shoeId": "7",
+    "size": "6",
+    "stock": 3
+  },
+  {
+    "shoeId": "7",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "7",
+    "size": "6.5",
+    "stock": 4
+  },
+  {
+    "shoeId": "7",
+    "size": "5.5",
+    "stock": 6
+  },
+  {
+    "shoeId": "8",
+    "size": "6",
+    "stock": 1
+  },
+  {
+    "shoeId": "8",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "8",
+    "size": "8",
+    "stock": 6
+  },
+  {
+    "shoeId": "9",
+    "size": "6",
+    "stock": 3
+  },
+  {
+    "shoeId": "9",
+    "size": "5",
+    "stock": 6
+  },
+
+  {
+    "shoeId": "9",
+    "size": "7",
+    "stock": 2
+  },
+  {
+    "shoeId": "9",
+    "size": "8",
+    "stock": 6
+  },
+  {
+    "shoeId": "9",
+    "size": "7.5",
+    "stock": 6
+  },
+  {
+    "shoeId": "10",
+    "size": "6",
+    "stock": 1
+  },
+  {
+    "shoeId": "10",
+    "size": "5",
+    "stock": 6
+  },
+  {
+    "shoeId": "10",
+    "size": "7",
+    "stock": 6
+  },
+  {
+    "shoeId": "10",
+    "size": "7.5",
+    "stock": 6
+  }
+]
