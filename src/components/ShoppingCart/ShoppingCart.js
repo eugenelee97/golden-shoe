@@ -50,13 +50,18 @@ const ShoppingCart = () => {
   //calculare price from cart using quantity
   const cartItemList = Object.values(cartItems);
   let totalPrice = cartItemList.reduce((acc, item) => {
-    acc += parseInt(item.price) * item.quantity;
+    acc += parseFloat(item.price) * item.quantity;
     return acc;
   }, 0);
 
   //if £10 off should be applied
   const applyVoucher = totalPrice > 30;
-  if (withVoucher && applyVoucher) totalPrice -= 10;
+  if (withVoucher && applyVoucher) {
+    totalPrice -= 10;
+  }
+
+  //set to two decimal places
+  totalPrice = totalPrice.toFixed(2);
 
   return (
     <Dialog
