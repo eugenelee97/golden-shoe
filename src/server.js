@@ -5,6 +5,12 @@ import { renderToString } from "react-dom/server";
 import React from "react";
 import apiRouter from "./api/router";
 import App from "./components/App";
+import {
+  ServerStyleSheets,
+  ThemeProvider,
+  createMuiTheme,
+} from "@material-ui/core/styles";
+const theme = createMuiTheme({});
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -18,11 +24,18 @@ server.use("/api", apiRouter);
 //render react pages if route is not /api
 server.get("/*", (req, res) => {
   const context = {};
+  const sheets = new ServerStyleSheets();
   const markup = renderToString(
-    <StaticRouter context={context} location={req.url}>
-      <App />
-    </StaticRouter>
+    sheets.collect(
+      <ThemeProvider theme={theme}>
+        <StaticRouter context={context} location={req.url}>
+          <App />
+        </StaticRouter>
+      </ThemeProvider>
+    )
   );
+
+  const materialCss = sheets.toString();
 
   if (context.url) {
     res.redirect(context.url);
@@ -40,6 +53,7 @@ server.get("/*", (req, res) => {
                   ? `<link rel="stylesheet" href="${assets.client.css}">`
                   : ""
               }
+              <style id="jss-server-side">${materialCss}</style>
               ${
                 process.env.NODE_ENV === "production"
                   ? `<script src="${assets.client.js}" defer></script>`
